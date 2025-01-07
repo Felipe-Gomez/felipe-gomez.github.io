@@ -1,0 +1,234 @@
+/* main.css */
+:root {
+    --primary-color: #1f77b4; /* matplotlib default blue */
+    --secondary-color: #d62728; /* matplotlib default red */
+    --text-color: #2d3748; 
+    --background-color: #ffffff;
+    --link-color: #1f77b4;
+}
+
+body {
+    font-family: 'Crimson Text', serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 1rem;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a, nav a:visited {
+    font-family: 'Lato', sans-serif;
+    color: var(--secondary-color) !important;
+    text-decoration: none;
+    margin-right: 1.5rem;
+    font-size: 1.1rem;
+}
+
+nav a:hover, nav a.active {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.profile {
+    margin-bottom: 3rem;
+}
+
+.profile-content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+.profile-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.0rem;
+}
+.profile-image {
+    width: 200px;
+    border-radius: 4px;
+}
+
+.profile-text {
+    flex: 1;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    color: var(--secondary-color);
+    margin-top: 2rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+
+.paper {
+    margin-bottom: 2rem;
+}
+
+.paper h3 {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.authors {
+    margin: 0.5rem 0;
+    color: #4a5568;
+}
+
+.venue {
+    font-style: italic;
+    color: #718096;
+    margin: 0.5rem 0;
+}
+
+.contact-info {
+    text-align: center;
+    margin: 0;         /* This removes all margins */
+    /* or you could use */
+    font-size: 0.9rem;
+}
+
+/* Photo Gallery Styles */
+.photo-gallery {
+    margin: 3rem 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.gallery-item {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+
+/* Base gallery image style */
+.gallery-image {
+    width: 100%;
+    height: 250px;  /* consistent container height */
+    object-fit: none;  /* allows custom fitting */
+    display: block;
+}
+
+/* Custom styles for each image */
+.gallery-image-guitar {
+    width: 400px;  /* specific width */
+    object-position: left center;  /* crop from right side */
+    object-fit: cover;
+}
+
+.gallery-image-nyc {
+    width: 350px;
+    object-position: left center;
+    object-fit: cover;
+}
+
+.gallery-image-london {
+    width: 300px;
+    object-position: left center;
+    object-fit: cover;
+}
+
+.gallery-image-sailing {
+    width: 380px;
+    object-position: left center;
+    object-fit: cover;
+}
+
+/* Container adjustment to handle varying widths */
+.gallery-item {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+figcaption {
+    text-align: center;
+    padding: 0.5rem;
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color);
+}
+
+/* Global link styling */
+a:not(nav a) {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:not(nav a):hover {
+    text-decoration: underline;
+}
+
+.paper-links a {
+    margin-right: 1rem;
+}
+
+/* Email styling */
+.email {
+    font-family: 'Crimson Text', serif;
+    color: #4a5568;
+}
+
+.at, .dot {
+    font-style: italic;
+    color: #718096;
+    margin: 0 0.2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-content {
+        flex-direction: column;
+    }
+
+    .profile-image {
+        width: 150px;
+        margin: 0 auto 1rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+    
+    .gallery-image {
+        height: 180px;
+    }
+}

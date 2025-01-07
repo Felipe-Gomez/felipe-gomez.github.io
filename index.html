@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Juan Felipe Gomez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Juan Felipe Gomez</h1>
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="#research">Research</a>
+                <a href="#awards">Awards</a>
+                <a href="#teaching">Teaching</a>
+		<!--<a href="#personal">Personal</a>
+		<a href="assets/cv.pdf">CV</a>-->
+            </nav>
+        </header>
+
+        <main>
+            <section class="profile">
+                <div class="profile-content">
+		    <div class="profile-sidebar">
+			    
+                    	<img src="./assets/gomez_sailing.jpg" alt="Felipe Gomez" class="profile-image">
+			<p class="contact-info"><span class="email">juangomez <span class="at"
+					>[at]</span> g <span class="dot">[dot]</span> harvard <span class="dot"
+					>[dot]</span> edu</span></p>
+			<p class="contact-info"> <a href="https://scholar.google.com/citations?hl=en&user=scxlhEMAAAAJ">Google Scholar </a>
+			</p>
+		    </div>
+		    <div class="profile-text">
+                        <p>Welcome! I am a PhD student at Harvard advised by 
+                        <a href="https://people.seas.harvard.edu/~flavio/">Flavio Calmon</a> 
+                        and funded by the Department of Energy
+                        <a href="https://www.krellinst.org/csgf/">
+                            Computational Science Graduate Fellowship</a>.</p>
+                        <p>In the summer of 2022 and 2023, I worked as a member of the
+                        <a href="pppl.gov">Princeton Plasma Physics Lab</a> and 
+                        <a href="https://csml.princeton.edu/">
+                            Center for Statistics and Machine Learning</a>
+                        at Princeton, where I was advised by <a href=
+                            "https://www.pppl.gov/people/william-tang">William Tang</a>.
+                        Previously, I was a Caltech undergraduate in Physics and 
+                        grew up in Atlanta, Georgia.</p>
+                        <p>My PhD research is focused on privacy-preserving machine learning, motivated
+                        by the following claims:</p>
+                        <ul>
+                            <li>Machine learning datasets often contain sensitive information, 
+                                making it crucial to address privacy concerns and prevent 
+                                adversaries from exploiting model outputs to identify individuals.
+                            </li>
+                            <li>Rigorous and interpretable privacy definitions are needed to ensure 
+                                privacy guarantees, high model accuracy, and foster public trust.</li>
+                        </ul>
+
+                        <p>Differential privacy has emerged as a framework that directly addresses these challenges. 
+                        As such, my research focuses on advancing the theory and practice of differential privacy.</p>
+
+                        <p>I have also worked on the trust-worthiness of large language models. While at Princeton, I worked
+                        on large-scale distributed pre-training of a foundation-scale model for clean-energy fusion applications.
+                        We presented some of our preliminary results at Super Computing 2024. See our presentation 
+                        <a href="https://tpc.dev/wp-content/uploads/2024/11/sc24-tpc-workshop-TANG.pdf">
+                        here</a>!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="research">
+                <h2>Research</h2>
+                <div class="paper">
+                    <h3><a href="https://arxiv.org/abs/2407.02191">Attack-aware noise calibration for differential privacy</a></h3>
+                    <p class="authors">Bogdan Kulynych*, <strong>JFG</strong>*, Georgios Kaissis, 
+                    Flavio du Pin Calmon, Carmela Troncoso</p>
+                    <p class="venue">NeruIPS 2024 | 
+                    <span class="paper-links">
+                        <a href="https://github.com/Felipe-Gomez/riskcal">Code</a>
+                    </span>
+                </div>
+                <div class="paper">
+                    <h3><a href="https://dl.acm.org/doi/10.1145/3630106.3659036">Algorithmic Arbitrariness in Content Moderation</a></h3>
+                    <p class="authors"><strong>JFG</strong>*, Caio Machado*, Lucas Monteiro Paes*, Flavio Calmon</p>
+                    <p class="venue">FAccT 2024</p>
+                </div>
+                <div class="paper">
+                    <h3><a href="https://proceedings.mlr.press/v202/alghamdi23a.html">The saddle-point method in differential privacy</a></h3>
+                    <p class="authors">Wael Alghamdi, <strong>JFG</strong>, Shahab Asoodeh, Flavio Calmon, Oliver Kosut, Lalitha Sankar</p>
+                    <p class="venue">ICML 2023 |
+                    <span class="paper-links">
+                        <a href="https://github.com/Felipe-Gomez/saddlepoint_accountant">Code</a>
+                    </span>
+                </div>
+                <div class="paper">
+                    <h3><a href="https://par.nsf.gov/servlets/purl/10533621">Schrödinger mechanisms: 
+                            Optimal differential privacy mechanisms for small sensitivity</a></h3>
+                    <p class="authors">Wael Alghamdi, Shahab Asoodeh, Flavio P Calmon, <strong>JFG</strong>, Oliver Kosut, Lalitha Sankar**</p>
+                    <p class="venue">ISIT 2023</p>
+                </div>
+                <div class="paper">
+                    <h3><a href="https://par.nsf.gov/servlets/purl/10533620">Optimal Multidimensional 
+                            Differentially Private Mechanisms in the Large-Composition Regime</a></h3>
+                    <p class="authors">Wael Alghamdi, Shahab Asoodeh, Flavio P Calmon, <strong>JFG</strong>, Oliver Kosut, Lalitha Sankar**</p>
+                    <p class="venue">ISIT 2023</p>
+                </div>
+                <div class="paper">
+                    <h3><a href="https://www.nature.com/articles/s41467-019-14057-6">Antisymmetric linear 
+                            magnetoresistance and the planar Hall effect</a></h3>
+                    <p class="authors">Yishu Wang, Patrick A Lee, DM Silevitch, <strong>JFG</strong>, 
+                    SE Cooper, Y Ren, J-Q Yan, D Mandrus, TF Rosenbaum, Yejun Feng</p>
+                    <p class="venue">Nature Communications 2020</p>
+                </div>
+		<p> * Equal Contribution </p>
+		<p> ** Author list in alphabetical order </p>
+            </section>
+
+            <section id="awards">
+                <h2>Awards</h2>
+                <ul>
+                    <li>Deparment of Energy (DOE) Computational Science Graduate Fellowship</li>
+                    <li>Goldwater Scholar (Caltech)</li>
+                    <li>Featured on <a href="https://x.com/Caltech/status/1040978777172574208">Breakthrough Caltech</a></li>
+                    <li>Mellon Mays Foundation Fellow (Caltech)</li>
+                    <li>Perpall Speaking Competition Finalist (Caltech)</li>
+                </ul>
+            </section>
+
+            <section id="teaching">
+                <h2>Teaching</h2>
+                <ul>
+                    <li>[Spring 2021] Teaching Fellow for <b>AM207: Stochastic Methods for Data Analysis, Inference and Optimization</b></li>
+                </ul>
+            </section>
+
+            <!--<section class="photo-gallery" id="personal">
+                <h2>Personal</h2>
+                <div class="gallery-grid">
+                    <figure class="gallery-item">
+                        <img src="./assets/gomez_guitar.png" alt="Playing guitar" class="gallery-image gallery-image-guitar">
+                        <figcaption>Music</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="./assets/gomez_nyc.jpg" alt="In New York City" class="gallery-image gallery-image-nyc">
+                        <figcaption>New York City</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="./assets/gomez_london.jpg" alt="In London" class="gallery-image gallery-image-london">
+                        <figcaption>London</figcaption>
+                    </figure>
+		    <figure class="gallery-item">
+                        <img src="./assets/gomez_sailing.jpg" alt="Sailing" class="gallery-image gallery-image-sailing">
+                        <figcaption>Sailing</figcaption>
+                    </figure>
+                </div>
+	    </section>-->
+        </main>
+    </div>
+</body>
+</html>
